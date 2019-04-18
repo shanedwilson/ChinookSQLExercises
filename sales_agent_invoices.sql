@@ -1,4 +1,4 @@
-Select [Name] = e.[FirstName] + ' ' + e.[LastName], i.InvoiceId
+Select [Name] = e.[FirstName] + ' ' + e.[LastName], i.*
 From dbo.Invoice i, dbo.Customer c
 Join dbo.Employee e
 on c.SupportRepId = e.EmployeeId
