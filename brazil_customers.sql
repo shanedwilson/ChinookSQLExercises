@@ -1,3 +1,4 @@
-Select [Name] = c.[FirstName] + ' ' + c.[Lastname], c.CustomerId, c.Country
-from dbo.Customer c
-where c.Country = 'Brazil'
+Select c.FirstName + ' ' + c.Lastname CustomerName, c.CustomerId, c.Country
+From dbo.Customer c
+Where c.Country = 'Brazil'
+Order By c.LastName

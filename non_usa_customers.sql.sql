@@ -1,3 +1,3 @@
-Select [Name] = c.[FirstName] + ' ' + c.[LastName], c.CustomerId, c.Country
-from dbo.Customer c
-where c.Country <> 'USA'
+Select c.FirstName + ' ' + c.LastName CustomerName, c.CustomerId, c.Country
+From dbo.Customer c
+Where c.Country <> 'USA'
