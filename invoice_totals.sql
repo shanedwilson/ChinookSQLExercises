@@ -1,4 +1,4 @@
-Select i.Total, [CustName] = c.[FirstName] + ' ' + c.[LastName], c.[Country], [AgentName] = e.[FirstName] + ' ' + e.[LastName]
+Select i.Total, c.FirstName + ' ' + c.LastName CustomerName, c.Country, e.FirstName + ' ' + e.LastName AgentName
 From dbo.Invoice i, dbo.Employee e
 Join dbo.Customer c
 On c.SupportRepId = e.EmployeeId

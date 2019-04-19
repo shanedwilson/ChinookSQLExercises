@@ -1,4 +1,4 @@
-Select p.Name, Count(p.PlaylistId) as NumberOfTracks
+Select p.Name, Count(p.PlaylistId) NumberOfTracks
 From Playlist p
 Join PlaylistTrack pt
 On pt.PlaylistId = p.PlaylistId
